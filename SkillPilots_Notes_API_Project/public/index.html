@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SkillPilots | Notes</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="container">
+    <header class="topbar">
+      <div class="brand"><span class="brand-icon">✦</span><span>SkillPilots</span></div>
+      <span class="tag">Learning workspace</span>
+    </header>
+
+    <section class="intro">
+      <p class="eyebrow">YOUR PERSONAL SPACE</p>
+      <h1>My Notes</h1>
+      <p class="subtitle">Capture ideas, save what you learn, and keep moving forward.</p>
+    </section>
+
+    <section class="layout">
+      <form id="note-form" class="panel form-panel">
+        <h2>Add a new note</h2>
+        <p class="muted">Write down something worth remembering.</p>
+        <label for="title">Title</label>
+        <input id="title" name="title" type="text" maxlength="100" placeholder="e.g. JavaScript basics" required>
+        <label for="content">Note content</label>
+        <textarea id="content" name="content" rows="6" placeholder="Type your note here..." required></textarea>
+        <button id="submit-btn" type="submit">＋ Save note</button>
+        <p id="message" class="message" role="status" aria-live="polite"></p>
+      </form>
+
+      <section class="panel notes-panel">
+        <div class="notes-heading">
+          <div><h2>All notes</h2><p class="muted">Your saved learning notes</p></div>
+          <button id="refresh-btn" class="refresh-btn" type="button" title="Refresh notes">↻</button>
+        </div>
+        <div id="notes-list" class="notes-list" aria-live="polite">
+          <p class="muted">Loading notes...</p>
+        </div>
+      </section>
+    </section>
+    <footer>Made for your learning journey <span>✦</span></footer>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>

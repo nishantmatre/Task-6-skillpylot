@@ -1,0 +1,13 @@
+{
+  "name": "skillpilots-notes-api",
+  "version": "1.0.0",
+  "description": "A simple notes web app with GET and POST API endpoints",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}
